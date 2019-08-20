@@ -1,0 +1,145 @@
+{
+  "id": "297e26c6-5c48-42c3-bf18-ac5850169c9c",
+  "version": "2.0",
+  "name": "Cura Healthcare Service",
+  "url": "http://demoaut.katalon.com/",
+  "tests": [{
+    "id": "4c6e0c8c-e244-494d-afea-b9dc9455a075",
+    "name": "weryfikacja stopki",
+    "commands": [{
+      "id": "7e7746bc-cab3-4445-bf07-26caafec67a8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0aadf706-f3bb-46ff-857f-2a92ff9c8ebc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'CURA Healthcare Service')]", "xpath:innerText"]
+      ],
+      "value": "CURA Healthcare Service"
+    }, {
+      "id": "25f16e59-73d0-452b-b448-2c0eef31395e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Atlanta 550 Pharr Road NE Suite 525\\nAtlanta, GA 30305"
+    }, {
+      "id": "2f70f385-0711-4c0c-8e6a-e3d5f1caa6ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-10",
+      "targets": [
+        ["css=.col-lg-10", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21b67293-f2b2-4a4f-ae68-43ba16e74b01",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.list-unstyled > li:nth-child(1)",
+      "targets": [
+        ["css=.list-unstyled > li:nth-child(1)", "css:finder"],
+        ["xpath=//div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,' (678) 813-1KMS')]", "xpath:innerText"]
+      ],
+      "value": "678 813-154"
+    }, {
+      "id": "b570c2c2-3e9e-45a8-96f7-f5d9fa815429",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=info@katalon.com",
+      "targets": [
+        ["linkText=info@katalon.com", "linkText"],
+        ["css=li > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'info@katalon.com')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mailto:info@katalon.com')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'info@katalon.com')]", "xpath:innerText"]
+      ],
+      "value": "info@katalon.com"
+    }, {
+      "id": "796d0576-18c2-48a7-861b-a709c2eec008",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.text-muted",
+      "targets": [
+        ["css=.text-muted", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Copyright © CURA Healthcare Service 2019')]", "xpath:innerText"]
+      ],
+      "value": "Copyright © CURA Healthcare Service 2019"
+    }, {
+      "id": "96ba91e8-ecc3-4ab9-bed4-76c8eda7fe8f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-phone",
+      "targets": [
+        ["css=.fa-phone", "css:finder"],
+        ["xpath=//li/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "353ae66b-0c3d-4595-b6ea-87726557cfc1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-envelope-o",
+      "targets": [
+        ["css=.fa-envelope-o", "css:finder"],
+        ["xpath=//li[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf7e4f43-90ab-4d38-a27f-5791687fb07b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-facebook",
+      "targets": [
+        ["css=.fa-facebook", "css:finder"],
+        ["xpath=//li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94faf701-4b5c-45f6-840c-4df6b41af5aa",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-twitter",
+      "targets": [
+        ["css=.fa-twitter", "css:finder"],
+        ["xpath=//li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66fb00dd-aa99-41b6-be11-b73fec828fda",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fa-dribbble",
+      "targets": [
+        ["css=.fa-dribbble", "css:finder"],
+        ["xpath=//li[3]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c117b482-624a-40da-a6c3-2da0ef784ed0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://demoaut.katalon.com/"],
+  "plugins": []
+}
