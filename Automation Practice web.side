@@ -1,0 +1,74 @@
+{
+  "id": "ccbd4c44-cea9-4963-bee9-09fe004dda3b",
+  "version": "2.0",
+  "name": "Automation Practice web",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "9b4886c8-c3ac-4690-a0ff-d1bd224f2879",
+    "name": "Formularz Contact us - brak tematu wiadomości",
+    "commands": [{
+      "id": "1c9a9c12-3b4f-4eae-906b-56f71a0f2598",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "879bd867-666c-4add-884c-62c63a8e43a6",
+      "comment": "",
+      "command": "click",
+      "target": "link=Contact us",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a58f0c6-c95e-4b97-8509-0f1817704d6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "dawid@o2.pl"
+    }, {
+      "id": "ee9442f1-3a2c-4628-b212-b5f0b39be9de",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_order",
+      "targets": [],
+      "value": "123-456"
+    }, {
+      "id": "6dc6b9ed-9a17-4abf-b54b-f6cd293620f8",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [],
+      "value": "test"
+    }, {
+      "id": "ac89a7e7-a2fe-4b72-9b8e-1f1367bbf1ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitMessage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a830443-27cd-4f2b-876f-e893591fdb1c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='center_column']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d414cace-e59c-4569-8af4-313fd7fd9ea3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9b4886c8-c3ac-4690-a0ff-d1bd224f2879"]
+  }],
+  "urls": ["http://automationpractice.com/index.php"],
+  "plugins": []
+}
