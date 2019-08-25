@@ -1,4 +1,4 @@
 # selenium_ide_learning
 
 
-Test recorded and written manually, using xpath
+Tests recorded and written manually, using xpath
