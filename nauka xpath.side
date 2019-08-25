@@ -91,6 +91,108 @@
       "targets": [],
       "value": "Authentication failed."
     }]
+  }, {
+    "id": "c2a3c507-5fce-49da-9893-418a71e304a3",
+    "name": "Zadanie 6 - lokalizator xpath za pomocą chropath",
+    "commands": [{
+      "id": "f0f18d0f-5a39-455d-aeda-5ca38ecada9d",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php?controller=authentication&back=my-account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63bbae41-a17f-495d-9e18-560c9ba52ac8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//a[@title='Recover your forgotten password']",
+      "targets": [],
+      "value": "Forgot your password?"
+    }, {
+      "id": "2f8549d3-fea5-4439-b777-4f24a974df31",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@title='Recover your forgotten password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51783d10-9c39-45a9-9123-04caf1e5cce1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//h1[@class='page-subheading']",
+      "targets": [],
+      "value": "FORGOT YOUR PASSWORD?"
+    }, {
+      "id": "84ea6e91-631e-4d57-b24a-153bc90db587",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//p[contains(text(),'Please enter the email address you used to registe')]",
+      "targets": [],
+      "value": "Please enter the email address you used to register. We will then send you a new password. "
+    }, {
+      "id": "985a9306-96f1-494d-90b1-1f2e4c792a0c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//label[@for='email']",
+      "targets": [],
+      "value": "Email address"
+    }, {
+      "id": "233d2ba6-856a-4dc1-964d-ed15a1729ffd",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@id='email']",
+      "targets": [],
+      "value": "test@mail.com"
+    }, {
+      "id": "2170880d-294b-42a0-a1c9-65dead67e1a5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//p[@class='submit']//span",
+      "targets": [],
+      "value": "Retrieve Password"
+    }, {
+      "id": "b8d6af06-0a1a-4971-8bcd-86896ef8db96",
+      "comment": "",
+      "command": "click",
+      "target": "//p[@class='submit']//span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "705b8ce6-630a-4354-a3ed-56e8e351af33",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "//p[@class='alert alert-success']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84d7c57b-328d-4106-a5a7-567bedd83118",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//a[@title='Back to Login']//span",
+      "targets": [],
+      "value": "Back to Login"
+    }, {
+      "id": "a3d6ae6c-ce17-4b44-bfd4-4ea269674a79",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@title='Back to Login']//span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3a088a1-7b04-432a-b917-479c2e364263",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Login - My Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ab1c2f1-75e7-4979-8af0-f17db1b074a7",
+      "comment": "",
+      "command": "close",
+      "target": "win_ser_local",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ff38b239-5108-4d67-98aa-72ad4ed5cdb1",
