@@ -1,0 +1,105 @@
+{
+  "id": "54f6d622-a530-4fc8-af6e-a979864a1364",
+  "version": "2.0",
+  "name": "nauka xpath",
+  "url": "http://www.automationpractice.com",
+  "tests": [{
+    "id": "76a1d394-294f-431f-8cb3-4f960ce2b227",
+    "name": "Zadanie 5 - test pisany manualnie za pomocą xpath",
+    "commands": [{
+      "id": "c4d75004-a2ec-4308-9367-c7a3216d8fde",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php?controller=authentication&back=my-account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64a9c8ba-dc1f-4667-b5ad-0828ffd4e3f8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h3[contains(text(),'Already registered?')]",
+      "targets": [],
+      "value": "ALREADY REGISTERED?"
+    }, {
+      "id": "dd47b45a-5446-41c7-9553-9057d8455d3c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//label[@for=\"email\"]",
+      "targets": [],
+      "value": "Email address"
+    }, {
+      "id": "598f6e9f-5d78-4851-bf5a-957853b92357",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='email']",
+      "targets": [],
+      "value": "test@mail.com"
+    }, {
+      "id": "8a0d8d70-487b-4159-ac4e-cb542c06ba0b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//label[@for='passwd']",
+      "targets": [],
+      "value": "Password"
+    }, {
+      "id": "f48e4d93-89f0-47e8-a67e-b801180178a7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='passwd']",
+      "targets": [],
+      "value": "unvPass"
+    }, {
+      "id": "12c2a306-bf10-4e22-b0d9-72e50cb2c878",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[@title='Recover your forgotten password']",
+      "targets": [],
+      "value": "Forgot your password?"
+    }, {
+      "id": "f2c46494-4bb8-4321-8390-9bef501b5c97",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//button[@id='SubmitLogin']",
+      "targets": [],
+      "value": "Sign in"
+    }, {
+      "id": "9d031393-6a0e-4522-acf8-5d699881949f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//i[@class='icon-lock left']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0ec2aa3-1970-4b67-b051-f1d528389744",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='SubmitLogin']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "127864b8-37e0-4c31-b18f-8c6fee543b3e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//p[contains(text(),'There is 1 error')]",
+      "targets": [],
+      "value": "There is 1 error"
+    }, {
+      "id": "64142ffc-7d85-4acf-b6c3-4cef40416da5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//li[contains(text(),'Authentication failed.')]",
+      "targets": [],
+      "value": "Authentication failed."
+    }]
+  }],
+  "suites": [{
+    "id": "ff38b239-5108-4d67-98aa-72ad4ed5cdb1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["76a1d394-294f-431f-8cb3-4f960ce2b227"]
+  }],
+  "urls": ["http://www.automationpractice.com/"],
+  "plugins": []
+}
